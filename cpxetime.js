@@ -2,6 +2,7 @@
 // @name        test piotre
 // @namespace   ows.fr
 // @include     http://www.redmine.org/projects/*/issues/*
+// @include     http://www.redmine.org/issues/*
 // @version     1
 // @grant       none
 // ==/UserScript==
@@ -12,7 +13,7 @@ Cpxetime = {
   },
   filltime: function (cpxe) {
   // Autofocus sur le login.
-  var cpxetotime = { '1' : '0,25'};
+  var cpxetotime = { '1' : '0,25', '2' : '0,5', '3' : '1', '5' : '2', '8' : '3', '13' : '4', '20' : '7', '40' : '14', '100' : '28' };
     
     jQuery('#issue_estimated_hours').val(cpxetotime[cpxe]);
   },
