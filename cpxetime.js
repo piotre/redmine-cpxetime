@@ -20,7 +20,7 @@ Cpxetime = {
 }
   
 jQuery(function () {
-   jQuery('#issue_custom_field_values_20').change(function () {
+   jQuery('#issue-form').on('change', '#issue_custom_field_values_20', function() {
      Cpxetime.focus();
      Cpxetime.filltime(jQuery(this).val());
    })
